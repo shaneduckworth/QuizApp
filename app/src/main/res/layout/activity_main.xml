@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:alpha="0.4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mairah" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Maira's game"
+                android:textAllCaps="true"
+                android:textSize="46sp" />
+
+            <Button
+                android:id="@+id/playA"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#25000000"
+                android:onClick="assign"
+                android:text="play a"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/playB"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#25000000"
+                android:onClick="assign"
+                android:text="play b"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/playC"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#25000000"
+                android:onClick="assign"
+                android:text="play c"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/playD"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#25000000"
+                android:onClick="assign"
+                android:text="play d"
+                android:textAllCaps="true" />
+
+
+            <Button
+                android:id="@+id/playE"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#25000000"
+                android:onClick="assign"
+                android:text="play e"
+                android:textAllCaps="true" />
+
+
+            <Button
+                android:id="@+id/playK"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#25000000"
+                android:onClick="assign"
+                android:text="play k"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:hint="What is Mairah's name?"
+                android:inputType="textCapWords"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Which statements are true?"
+                android:textAllCaps="true"
+                android:textSize="16dp" />
+
+            <CheckBox
+                android:id="@+id/i_am_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="24dp"
+                android:text="I am two years old."
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/i_am_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="24dp"
+                android:text="I am a female."
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/i_live_in_delhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="24dp"
+                android:text="I live in Delhi."
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Which statement best describes Mairah?"
+                android:textAllCaps="true"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioCuteness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioCute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="I am cute." />
+
+                <RadioButton
+                    android:id="@+id/radioTotallyCute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am totally cute." />
+
+                <RadioButton
+                    android:id="@+id/radioWayTooCute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am way too cute." />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/score"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#35000000"
+                android:onClick="score"
+                android:text="score"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
