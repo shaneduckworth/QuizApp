@@ -219,6 +219,24 @@ public class MainActivity extends AppCompatActivity {
         totalScore = scoreA + scoreB + scoreC + scoreD + scoreE + scoreK + scoreName + scoreAge + scoreCute;
         Toast.makeText(getApplicationContext(), "You did it! Your score is: " + totalScore + " out of a possible 9.", Toast.LENGTH_LONG).show();
         mp.release();
+
+        // reset all!
+        scoreA = 0;
+        scoreB = 0;
+        scoreC = 0;
+        scoreD = 0;
+        scoreE = 0;
+        scoreK = 0;
+        scoreName = 0;
+        scoreAge = 0;
+        scoreCute = 0;
+        playA.setBackgroundResource(0);
+        playB.setBackgroundResource(0);
+        playC.setBackgroundResource(0);
+        playD.setBackgroundResource(0);
+        playE.setBackgroundResource(0);
+        playK.setBackgroundResource(0);
+
     }
 
     @Override
