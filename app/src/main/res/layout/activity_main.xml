@@ -28,8 +28,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="sans-serif"
-                android:text="Maira's game"
+                android:app.fontFamily="sans-serif"
+                android:text="@string/mairahs_game"
                 android:textAllCaps="true"
                 android:textSize="46sp" />
 
@@ -41,7 +41,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#25000000"
                 android:onClick="assign"
-                android:text="play a"
+                android:text="@string/play_a"
                 android:textAllCaps="true" />
 
             <Button
@@ -52,7 +52,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#25000000"
                 android:onClick="assign"
-                android:text="play b"
+                android:text="@string/play_b"
                 android:textAllCaps="true" />
 
             <Button
@@ -63,7 +63,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#25000000"
                 android:onClick="assign"
-                android:text="play c"
+                android:text="@string/play_c"
                 android:textAllCaps="true" />
 
             <Button
@@ -74,7 +74,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#25000000"
                 android:onClick="assign"
-                android:text="play d"
+                android:text="@string/play_d"
                 android:textAllCaps="true" />
 
 
@@ -86,7 +86,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#25000000"
                 android:onClick="assign"
-                android:text="play e"
+                android:text="@string/play_e"
                 android:textAllCaps="true" />
 
 
@@ -99,7 +99,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#25000000"
                 android:onClick="assign"
-                android:text="play k"
+                android:text="@string/play_k"
                 android:textAllCaps="true" />
 
             <EditText
@@ -107,7 +107,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:hint="What is Mairah's name?"
+                android:hint="@string/mairahs_name_query"
                 android:inputType="textCapWords"
                 android:textSize="16sp" />
 
@@ -115,10 +115,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="sans-serif"
-                android:text="Which statements are true?"
+                android:app.fontFamily="sans-serif"
+                android:text="@string/which_statements_are_true"
                 android:textAllCaps="true"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/i_am_2"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
                 android:paddingLeft="24dp"
-                android:text="I am two years old."
+                android:text="@string/i_am_two"
                 android:textSize="16sp" />
 
             <CheckBox
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
                 android:paddingLeft="24dp"
-                android:text="I am a female."
+                android:text="@string/i_am_a_female"
                 android:textSize="16sp" />
 
             <CheckBox
@@ -144,17 +144,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:paddingLeft="24dp"
-                android:text="I live in Delhi."
+                android:text="@string/i_live_in_delhi"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="sans-serif"
-                android:text="Which statement best describes Mairah?"
+                android:app.fontFamily="sans-serif"
+                android:text="@string/how_cute"
                 android:textAllCaps="true"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <RadioGroup
                 android:id="@+id/radioCuteness"
@@ -166,19 +166,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="I am cute." />
+                    android:text="@string/i_am_cute" />
 
                 <RadioButton
                     android:id="@+id/radioTotallyCute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="I am totally cute." />
+                    android:text="@string/i_am_totally_cute" />
 
                 <RadioButton
                     android:id="@+id/radioWayTooCute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="I am way too cute." />
+                    android:text="@string/i_am_way_too_cute" />
 
             </RadioGroup>
 
@@ -190,7 +190,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#35000000"
                 android:onClick="score"
-                android:text="score"
+                android:text="@string/score"
                 android:textAllCaps="true" />
 
         </LinearLayout>

@@ -198,8 +198,8 @@ public class MainActivity extends AppCompatActivity {
      * @param view This is executed on the "Score" button press; it will take in the final user inputs, then tally scores, and finally display the total in a Toast.
      */
     public void score(View view) {
-        String name_in_text_field = nameEntry.getText().toString();
-        String mairah = "Mairah";
+        String name_in_text_field = nameEntry.getText().toString().toLowerCase();
+        String mairah = "mairah";
 
         if (name_in_text_field.equals(mairah)) {
             scoreName = 1;

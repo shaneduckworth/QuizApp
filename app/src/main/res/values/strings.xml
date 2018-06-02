@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="mairahs_game">Mairah\'s game</string>
+    <string name="play_a">play a</string>
+    <string name="play_b">play b</string>
+    <string name="play_c">play c</string>
+    <string name="play_d">play d</string>
+    <string name="play_e">play e</string>
+    <string name="play_k">play k</string>
+    <string name="mairahs_name_query">What is Mairah\'s name?</string>
+    <string name="which_statements_are_true">Which statements are true?</string>
+    <string name="i_am_two">I am two years old.</string>
+    <string name="i_am_a_female">I am a female.</string>
+    <string name="i_live_in_delhi">I live in Delhi.</string>
+    <string name="how_cute">Which statement best describes Mairah?</string>
+    <string name="i_am_cute">I am cute.</string>
+    <string name="i_am_totally_cute">I am totally cute.</string>
+    <string name="i_am_way_too_cute">I am way too cute.</string>
+    <string name="score">score</string>
 </resources>
