@@ -17,4 +17,14 @@
     <string name="i_am_totally_cute">I am totally cute.</string>
     <string name="i_am_way_too_cute">I am way too cute.</string>
     <string name="score">score</string>
+    <string name="cow">cow</string>
+    <string name="kangaroo">kangaroo</string>
+    <string name="elephant">elephant</string>
+    <string name="apple">apple</string>
+    <string name="banana">banana</string>
+    <string name="dog">dog</string>
+    <string name="title">Pick an object representing the letter spoken</string>
+    <string name="mairah">mairah</string>
+    <string name="you_did_it">You did it! Your score is:\ </string>
+    <string name="out_of_total">\ out of a possible 9.</string>
 </resources>

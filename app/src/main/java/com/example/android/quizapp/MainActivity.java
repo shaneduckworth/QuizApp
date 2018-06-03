@@ -101,12 +101,12 @@ public class MainActivity extends AppCompatActivity {
     public void popUp(int uri) {
 
         // First set the potential choices for the pop-up questions.
-        CharSequence choicesA[] = new CharSequence[]{"cow", "kangaroo", "elephant", "apple"};
-        CharSequence choicesB[] = new CharSequence[]{"dog", "banana", "elephant", "apple"};
-        CharSequence choicesC[] = new CharSequence[]{"cow", "banana", "kangaroo", "apple"};
-        CharSequence choicesD[] = new CharSequence[]{"banana", "apple", "dog", "kangaroo"};
-        CharSequence choicesE[] = new CharSequence[]{"kangaroo", "dog", "elephant", "banana"};
-        CharSequence choicesK[] = new CharSequence[]{"dog", "banana", "apple", "kangaroo"};
+        CharSequence choicesA[] = new CharSequence[]{getString(R.string.cow), getString(R.string.kangaroo), getString(R.string.elephant), getString(R.string.apple)};
+        CharSequence choicesB[] = new CharSequence[]{getString(R.string.kangaroo), getString(R.string.banana), getString(R.string.elephant), getString(R.string.apple)};
+        CharSequence choicesC[] = new CharSequence[]{getString(R.string.cow), getString(R.string.banana), getString(R.string.kangaroo), getString(R.string.apple)};
+        CharSequence choicesD[] = new CharSequence[]{getString(R.string.banana), getString(R.string.apple), getString(R.string.dog), getString(R.string.kangaroo)};
+        CharSequence choicesE[] = new CharSequence[]{getString(R.string.kangaroo), getString(R.string.dog), getString(R.string.elephant), getString(R.string.banana)};
+        CharSequence choicesK[] = new CharSequence[]{getString(R.string.dog), getString(R.string.banana), getString(R.string.apple), getString(R.string.kangaroo)};
         CharSequence questions[] = new CharSequence[]{"", "", "", ""};
 
         switch (uri) { // then set the question variable for the correct question, and provide the code the answer key
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Pick an object representing the letter spoken");
+        builder.setTitle(R.string.title);
         builder.setItems(questions, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void score(View view) {
         String name_in_text_field = nameEntry.getText().toString().toLowerCase();
-        String mairah = "mairah";
+        String mairah = getString(R.string.mairah);
 
         if (name_in_text_field.equals(mairah)) {
             scoreName = 1;
@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         totalScore = scoreA + scoreB + scoreC + scoreD + scoreE + scoreK + scoreName + scoreAge + scoreCute;
-        Toast.makeText(getApplicationContext(), "You did it! Your score is: " + totalScore + " out of a possible 9.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), getString(R.string.you_did_it) + totalScore + getString(R.string.out_of_total), Toast.LENGTH_LONG).show();
         mp.release();
 
         // reset all!
