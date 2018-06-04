@@ -17,23 +17,32 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private MediaPlayer mp;
-    int scoreA = 0;
-    int scoreB = 0;
-    int scoreC = 0;
-    int scoreD = 0;
-    int scoreE = 0;
-    int scoreK = 0;
-    int scoreName = 0;
-    int scoreAge = 0;
-    int scoreCute = 0;
-    int totalScore;
-    CheckBox chAge, chGender, chDelhi;
-    EditText nameEntry;
-    Button playA, playB, playC, playD, playE, playK;
-    RadioGroup cuteness;
-    RadioButton cute, totallyCute, wayTooCute;
-    int currentUri;
-    int answer;
+    private int scoreA = 0;
+    private int scoreB = 0;
+    private int scoreC = 0;
+    private int scoreD = 0;
+    private int scoreE = 0;
+    private int scoreK = 0;
+    private int scoreName = 0;
+    private int scoreAge = 0;
+    private int scoreCute = 0;
+    private int totalScore;
+    private CheckBox chAge;
+    private CheckBox chGender;
+    private CheckBox chDelhi;
+    private EditText nameEntry;
+    private Button playA;
+    private Button playB;
+    private Button playC;
+    private Button playD;
+    private Button playE;
+    private Button playK;
+    private RadioGroup cuteness;
+    private RadioButton cute;
+    private RadioButton totallyCute;
+    private RadioButton wayTooCute;
+    private int currentUri;
+    private int answer;
 
 
     @Override
